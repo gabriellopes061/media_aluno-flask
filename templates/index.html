@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do aluno</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/">lançar média</a>
+        <a href="/verificar_nota"> Verificar média</a>
+    </nav>
+
+    <div class="lanç_notas">
+        <form action="/verificar_notas" method="post">
+        <h2>Média do aluno</h2>
+        <label class="nome" for="">Nome do aluno: </label>
+        <input type="text" name="nome" id="nome"> <br>
+
+        <label class="nota_1" for="">Nota 1:</label>
+        <input type="text" name="nota_1" id="nota_1"> <br>
+
+        <label class="nota_2" for="">Nota 2:</label>
+        <input type="text" name="nota_2" id="nota_2"> <br>
+
+        <label class="nota_3" for="">Nota 3:</label>
+        <input type="text" name="nota_3" id="nota_3"> 
+        
+        <div>
+            <button class="butao" type="submit">Enviar</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

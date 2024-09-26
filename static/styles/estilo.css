@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+nav{
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 38%;
+    margin-bottom: 30px;
+}
+
+
+nav a{
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 7px;
+    transition: background-color 0.5s
+    ease;
+}
+
+nav a:hover{
+    border-radius: 7px;
+    background-color: rgb(162, 162, 162);
+}
+
+.lanç_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.lanç_notas form{
+    display: grid;
+    grid-template-columns: auto;
+
+    font-family: var(--fonte-primaria);
+    border: 1px solid black;
+    border-radius: 20px 0 20px 0;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 10px 10px rgb(146, 166, 192);
+}
+
+form label{
+    margin-top: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+form input[type="text"]{
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+ form input[type="text"]:hover{
+    background-color: rgb(162, 162, 162) ;
+}
+
+form input[type="text"]:focus{
+    background-color: rgb(162, 162, 162) ;
+}
+
+.butao{
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-left: 80px;
+}
+
+.butao:hover{
+    background-color: lightgray;    
+}
+
+/*pág 2*/
+
+.verificar_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 30px;
+    font-family: var(--fonte-primaria);
+}
+
+.verificar_notas table{
+    margin-top: 30px;
+    border: 0.5px solid black;
+}
+
+.verificar_notas th{
+    padding: 10px 25px;
+    background-color: lightgrey;
+    border: 0.5px solid black;
+}
+
+
+
+td{
+    border: 1px solid black;
+    padding-left: 10px;
+}

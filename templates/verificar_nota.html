@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do aluno</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/">lançar média</a>
+        <a href="/verificar_nota"> Verificar média</a>
+    </nav>
+
+    <div class="verificar_notas">
+        <h2>Verificar Notas</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Média</th>
+            </tr>
+            {% for pro in prod %}
+            <tr class="lops">
+                <td>{{ pro.nome }}</td>
+                <td>{{ pro.nota_1 }}</td>
+                <td>{{ pro.nota_2 }}</td>
+                <td>{{ pro.nota_3 }}</td>
+                <td>{{ pro.media }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
